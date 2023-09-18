@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com/" />        
+  <remote name="gitlab" fetch="https://gitlab.com/" />
+  <remote name="pixel" fetch="https://gitlab.pixelexperience.org" />
+
+
+  <!--Remove these projects-->
+
+  <remove-project name="frameworks_base"/>
+  <remove-project name="packages_apps_Settings"/>
+  <remove-project name="vendor_yaap"/>
+  <remove-project name="yaosp/vendor_google_gms"/>
+  <remove-project name="bootable_recovery" />
+  <remove-project name="packages_apps_WallpaperPicker2" />
+  <remove-project name="packages_apps_Launcher3" />
+  <remove-project name="yaosp/vendor_google_pixel" />
+  <remove-project name="packages_apps_YASP" />
+  <remove-project name="vendor_themes" />
+
+  <!-- OP 7 SERIES SPECIFIC -->
+
+  <!-- Good Stuff -->
+  <project path="vendor/themes" name="RedSkulHYDRA/vendor_themes" remote="github" revision="yaap-custom" />
+  <project path="frameworks/base" name="RedSkulHYDRA/frameworks_base" remote="github" revision="yaap-custom"/>
+  <project path="packages/apps/Settings" name="RedSkulHYDRA/packages_apps_Settings" remote="github" revision="yaap-custom" />
+  <project path="packages/apps/Settings/YASP" name="RedSkulHYDRA/packages_apps_YASP" remote="github" revision="yaap-custom" />
+  <project path="packages/apps/GameSpace" name="RedSkulHYDRA/packages_apps_GameSpace" remote="github" revision="yaap-custom" />
+
+  <!-- Device -->
+  <project path="device/oneplus/hotdogb" name="RedSkulHYDRA/device_oneplus_hotdogb" remote="github" revision="yaap-custom" />
+  <project path="device/oneplus/hotdog" name="yaap/device_oneplus_hotdog" remote="github" revision="thirteen" />
+  <project path="device/oneplus/guacamoleb" name="yaap/device_oneplus_guacamoleb" remote="github" revision="thirteen" />
+  <project path="device/oneplus/guacamole" name="yaap/device_oneplus_guacamole" remote="github" revision="thirteen" />
+  <project path="device/oneplus/sm8150-common" name="RedSkulHYDRA/device_oneplus_sm8150-common" remote="github" revision="yaap-custom" />
+  <project path="device/qcom/common" name="yaap/device_qcom_common" remote="github" revision="thirteen"/>
+
+  <!-- Vendor -->
+  <project path="vendor/oneplus/hotdogb" name="yaap/vendor_oneplus_hotdogb" remote="github" revision="thirteen" />
+  <project path="vendor/oneplus/hotdog" name="yaap/vendor_oneplus_hotdog" remote="github" revision="thirteen" />
+  <project path="vendor/oneplus/guacamoleb" name="yaap/vendor_oneplus_guacamoleb" remote="github" revision="thirteen" />
+  <project path="vendor/oneplus/guacamole" name="yaap/vendor_oneplus_guacamole" remote="github" revision="thirteen" />
+  <project path="vendor/oneplus/sm8150-common" name="RedSkulHYDRA/vendor_oneplus_sm8150-common" remote="github" revision="yaap-custom" />
+  <project path="vendor/google/gms" name="RedSkulHYDRA/yaap-gapps" remote="gitlab" revision="thirteen" />
+  <project path="vendor/yaap" name="RedSkulHYDRA/vendor_yaap" remote="github" revision="yaap-custom" />
+  <project path="vendor/qcom/common" name="yaosp/vendor_qcom_common" remote="gitlab" revision="thirteen"/>
+
+  <!-- Kernel -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="yaap/prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="github" revision="eleven" />
+  <project path="kernel/oneplus/sm8150" name="RedSkulHYDRA/Neptune_kernel_sm8150_oneplus" remote="github" revision="inline-erofs" /> 
+  <project path="prebuilts/clang/host/linux-x86/neutron-clang" name="RedSkulHYDRA/neutron-clang" remote="gitlab" revision="clang-18"/>
+
+  <!-- Extras -->
+  <project path="bootable/recovery" name="RedSkulHYDRA/bootable_recovery" remote="github" revision="yaap-custom" />
+  <project path="hardware/oneplus" name="yaap/hardware_oneplus" remote="github" revision="thirteen" /> 
+  <project path="external/faceunlock" name="android/external_faceunlock" remote="pixel" revision="thirteen" />
+  <project path="packages/apps/FaceUnlockService" name="PixelExperience/packages_apps_FaceUnlockService" remote="github" revision="thirteen" />
+  <project path="packages/apps/Launcher3" name="RedSkulHYDRA/packages_apps_Launcher3" remote="github" revision="yaap-custom" />
+  <project path="packages/apps/WallpaperPicker2" name="RedSkulHYDRA/packages_apps_WallpaperPicker2" remote="github" revision="yaap-custom" />
+  <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
+  <project path="vendor/icons" name="RedSkulHYDRA/vendor_icons" remote="github" revision="main" />
+</manifest>
